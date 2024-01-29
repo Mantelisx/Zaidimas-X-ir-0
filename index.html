@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Žaidimas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+        <div class="wrapper">
+
+            <div class="show" id="group1">
+                    <h1>Kryžiukai Nuliukai</h1>
+                    <br>
+                    <input type="text" id="player1_id" placeholder="Žaidėjas 1">
+                    <input type="text" id="player2_id" placeholder="Žaidėjas 2">
+                    <button onclick="rodyk();" id="show_id">Pradėti &#x2192;</button>
+                
+            </div>
+
+            <div class="game hide">
+                <h1>Kryžiukai Nuliukai</h1> <br>
+                <h3 class="show" id="eile1">'X' eilė</h3>
+                <!-- <p class="hide" id="eile2">O eilė</p> -->
+                <div class="container">
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                </div>
+                <div class="container1">
+                <button id="restart" class="rbutton">Iš naujo</button>
+                </div>
+                <div>
+                    <h2>Rezultatas</h2>
+                    <p id="tekstas"> </p>
+                    <p id="tekste"></p>
+                </div>
+            </div>
+
+        </div>
+    
+
+    <div class="popup hide">
+        <p id="message">Pranešimas</p>
+        <button id="new-game">Kartoti</button>
+    </div>
+    
+     <!-- Script -->
+    <script src="scripts.js"></script>
+</body>
+</html>
